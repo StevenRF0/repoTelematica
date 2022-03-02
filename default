@@ -1,0 +1,8 @@
+
+prompt 0
+timeout 120
+MENU TITLE ################### Menu de arranque PXE ######################
+LABEL centos7_x64
+MENU LABEL CentOS 7_X64
+KERNEL /networkboot/vmlinuz
+APPEND initrd=/networkboot/initrd.img inst.repo=ftp://192.168.56.4/pub ks=ftp://192.168.50.4/pub/centos7.cfg
